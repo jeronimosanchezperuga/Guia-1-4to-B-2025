@@ -5,6 +5,7 @@ using UnityEngine;
 public class ComidaDeAnimalitos : MonoBehaviour
 {
     //1. definición de variables
+
     public int cantidadDias;
     public string codigoAnimal;
     int gramosComidaTotal;
@@ -19,36 +20,47 @@ public class ComidaDeAnimalitos : MonoBehaviour
     void Start()
     {
         //2. Ingreso de datos (más adelante)
-
-        if(codigoAnimal == "G" || codigoAnimal == "g") 
+        if (cantidadDias < 3)
         {
-            racionAnimalActual = racionGatos;
-        }else if(codigoAnimal == "PP" || codigoAnimal == "pp")
-        {
-            racionAnimalActual = racionPerrosPeque;
-        }else if(codigoAnimal == "PG" || codigoAnimal == "pg")
-        {
-            racionAnimalActual = racionPerrosGrandes;
+            Debug.Log("Cantidad de días no válida.");
+            return;
         }
 
+            if (codigoAnimal == "G" || codigoAnimal == "g")
+            {
+                racionAnimalActual = racionGatos;
+            }
+            else if (codigoAnimal == "PP" || codigoAnimal == "pp")
+            {
+                racionAnimalActual = racionPerrosPeque;
+            }
+            else if (codigoAnimal == "PG" || codigoAnimal == "pg")
+            {
+                racionAnimalActual = racionPerrosGrandes;
+            }else
+            {
+                Debug.Log("Código no válido");
+                return;
+            }
 
-        //3. Procesamiento de los datos
 
-        gramosComidaTotal = racionAnimalActual * cantidadDias;
+            //3. Procesamiento de los datos
 
-        costoAlimento =   gramosComidaTotal / 100 * precioPorCienGramos;
+            gramosComidaTotal = racionAnimalActual * cantidadDias;
 
-        //4. Mostrar resultado
+            costoAlimento = gramosComidaTotal / 100 * precioPorCienGramos;
 
-        Debug.Log("Para ese periodo se necesitan " + gramosComidaTotal + 
-            " gramos de alimento");
-        Debug.Log("Costo alimento: $" + costoAlimento);
+            //4. Mostrar resultado
 
+            Debug.Log("Para ese periodo se necesitan " + gramosComidaTotal +
+                " gramos de alimento");
+            Debug.Log("Costo alimento: $" + costoAlimento);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
