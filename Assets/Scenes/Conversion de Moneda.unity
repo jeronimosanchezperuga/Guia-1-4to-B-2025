@@ -112,7 +112,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &698631980
+--- !u!1 &1092856817
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,36 +120,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 698631982}
-  - component: {fileID: 698631981}
+  - component: {fileID: 1092856819}
+  - component: {fileID: 1092856818}
   m_Layer: 0
-  m_Name: Comida De Animalito
+  m_Name: Conversion de Moneda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &698631981
+--- !u!114 &1092856818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698631980}
+  m_GameObject: {fileID: 1092856817}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9bc31b27ad808e47a89a43880f8d7f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ab5496b86d05fe4fafbbeaf924a8382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cantidadDias: 5
-  codigoAnimal: X
---- !u!4 &698631982
+  montoAConvertir: 10000
+  codigoMoneda: x
+--- !u!4 &1092856819
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698631980}
+  m_GameObject: {fileID: 1092856817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -157,7 +157,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1518945618
+--- !u!1 &2040664343
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,9 +165,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1518945621}
-  - component: {fileID: 1518945620}
-  - component: {fileID: 1518945619}
+  - component: {fileID: 2040664346}
+  - component: {fileID: 2040664345}
+  - component: {fileID: 2040664344}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -175,21 +175,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1518945619
+--- !u!81 &2040664344
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518945618}
+  m_GameObject: {fileID: 2040664343}
   m_Enabled: 1
---- !u!20 &1518945620
+--- !u!20 &2040664345
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518945618}
+  m_GameObject: {fileID: 2040664343}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -225,13 +225,13 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &1518945621
+--- !u!4 &2040664346
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518945618}
+  m_GameObject: {fileID: 2040664343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
